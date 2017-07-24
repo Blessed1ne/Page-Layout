@@ -46,10 +46,16 @@ a:hover{
     color: blue;
 }
 
-header{ 
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ddddff;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header a {
+  /*display: flex;
+  flex-direction: row;*/
 }
 
 #site_container{
@@ -62,17 +68,49 @@ header{
 }
 
 #main_nav{
-    text-align: center;
+    display: flex;
+    align-items: center;
+
+
 }
 
 #main_nav a{
-    display: block;
-    padding: 10px 2%;
+    padding: 10px 15px;
     background: #ffdddd;
-    margin-bottom: 5px;
     border-radius: 5px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+
+
 }
 
 #main_nav a:hover{
     background: #ddddff;
+}
+
+#main_content {
+    display: flex;
+    background-color: #ddffff;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#sidebar_content {
+    background-color: #ffffdd;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 20px;
+
+}
+
+#site_footer {
+    background-color: #ffdea6;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
